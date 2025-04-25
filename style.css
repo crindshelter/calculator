@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+    font-family: 'pixelify sans';
 }
 
 body {
@@ -8,23 +11,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url(images/bg.png) no-repeat center;
+    background-size: cover;
 }
 
 .calculator-body {
     width: 400px;
     height: 500px;
-    background-color: red;
+    background-color: #30abf383;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     padding: 25px;
     gap: 30px;
+    border-radius: 25px;
+    box-shadow: -1px 11px 5px 5px rgba(0,0,0,0.47);
+    -webkit-box-shadow: -1px 11px 5px 5px rgba(0,0,0,0.47);
+    -moz-box-shadow: -1px 11px 5px 5px rgba(0,0,0,0.47);
 }
 
 .screen {
     height: 100px;
     width:  90%;
-    background-color: gray;
+    background-color: rgb(45, 49, 74);
+    border-radius: 5px;
 }
 
 .buttons {
@@ -35,9 +46,24 @@ body {
 }
 
 .buttons > * {
-    padding: 25px;
+    padding: 20px;
+    border: 2px solid black;
+    font-size: 1.5em;
 }
+
 
 #zero {
     grid-column: span 3;
+}
+
+#delete, #clear {
+    background-color: lightgreen;
+}
+
+#delete:hover, #clear:hover {
+    background-color: #60a860;
+}
+
+#delete:active, #clear:active {
+    background-color: #4d854d;
 }
