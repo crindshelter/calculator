@@ -1,5 +1,20 @@
+const textScreen = document.querySelector(".text");
+
 function main(){
 
+}
+
+// Display numbers/operator on screen
+function display(number) {
+    textScreen.innerHTML += number;
+}
+
+function clearDisplay() {
+    textScreen.innerHTML = "";
+}
+
+function deleteText() {
+    textScreen.innerHTML = textScreen.innerHTML.slice(0, -1);
 }
 
 // Adds two numbers
@@ -21,5 +36,6 @@ function multiply(x, y) {
 function divide(x, y) {
     return x / y;
 }
+
 
 main()
