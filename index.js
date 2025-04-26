@@ -84,6 +84,9 @@ function operate(operator, num1, num2) {
 function clearDisplay() {
     currentInput = "";
     textScreen.innerHTML = "";
+    firstNumber = null;
+    secondNumber = null;
+    operator = null;
 }
 
 // Deletes text
