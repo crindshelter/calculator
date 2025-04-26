@@ -7,10 +7,6 @@ let operator = null;
 let isUsed = false;
 
 
-function main(){
-
-}
-
 // Display numbers/operator on screen
 function display(number) {
     if (number === "." && currentInput.includes(".")) return;
@@ -29,6 +25,7 @@ function display(number) {
     }
 }
 
+// Sets current operator
 function setOperator(op) {
     if (firstNumber === null) return;
 
@@ -40,6 +37,7 @@ function setOperator(op) {
     currentInput = '';
 }
 
+// Handles result
 function equal() {
     if (operator !== null && currentInput !== '') {
         secondNumber = currentInput;
@@ -55,6 +53,8 @@ function equal() {
     }
 }
 
+
+// Handles operations
 function operate(operator, num1, num2) {
     num1 = parseFloat(num1);
     num2 = parseFloat(num2);
@@ -111,11 +111,3 @@ function multiply(x, y) {
 function divide(x, y) {
     return x / y;
 }
-
-function checksZero(input) {
-    if (input.charAt(0) === "0" && input.charAt(1) !== ".") return true;
-
-    return false;
-}
-
-main()
