@@ -22,18 +22,18 @@
             <button id="num-4" onclick="display('4')">4</button>
             <button id="num-5" onclick="display('5')">5</button>
             <button id="num-6" onclick="display('6')">6</button>
-            <button id="op-mul" onclick="display('x')">X</button>
-            <button id="op-div" onclick="display('/')">/</button>
+            <button id="op-mul" onclick="setOperator('x')">X</button>
+            <button id="op-div" onclick="setOperator('/')">/</button>
 
             <button id="num-1" onclick="display('1')">1</button>
             <button id="num-2" onclick="display('2')">2</button>
             <button id="num-3" onclick="display('3')">3</button>
-            <button id="op-add" onclick="display('+')">+</button>
-            <button id="op-sub" onclick="display('-')">-</button>
+            <button id="op-add" onclick="setOperator('+')">+</button>
+            <button id="op-sub" onclick="setOperator('-')">-</button>
 
             <button id="zero" onclick="display('0')">0</button>
             <button id="decimal" onclick="display('.')">.</button>
-            <button id="equals">=</button>
+            <button id="equals" onclick="equal()">=</button>
         </div>
     </div>
     <script src="index.js"></script>
